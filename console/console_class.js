@@ -7,4 +7,4 @@ const errorOutput = fs.createWriteStream('console/stderr.log'); // 파일 쓰기
 const logger = new Console({ stdout: output, stderr: errorOutput }); // 콘솔 객체 생성
 const count = 5;
 logger.log('count: %d', count); // stdout.log 파일에 count: 5 기록
-logger.error('count:' + count); // stderr.log 파일에 count: 5 기록
+logger.error('count: ' + count); // stderr.log 파일에 count: 5 기록
